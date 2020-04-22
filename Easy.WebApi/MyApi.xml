@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Easy.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Easy.WebApi.Configuration.Api">
+            <summary>
+            API versions names <br/>
+            Major, optional minor version, and status <br/>
+            VVV at
+            https://github.com/Microsoft/aspnet-api-versioning/wiki/Version-Format
+            </summary>
+        </member>
+        <member name="M:Easy.WebApi.Controllers.V1.UsersController.Get(System.Int32,System.Int32)">
+            <summary>
+            Retrieves a list of users
+            </summary>
+            <remarks>Awesomeness!</remarks>
+            <response code="200">Users found</response>
+            <response code="400">Query has missing/invalid values</response>
+            <response code="404">Users not found</response>
+            <response code="500">Oops! Can't retrieve user right now</response>
+        </member>
+        <member name="M:Easy.WebApi.Controllers.V1.UsersController.GetById(System.Guid)">
+            <summary>
+            Retrieves user by id
+            </summary>
+            <remarks>Awesomeness!</remarks>
+            <response code="200">User found</response>
+            <response code="400">Query has missing/invalid values</response>
+            <response code="404">User not found</response>
+            <response code="500">Oops! Can't retrieve user right now</response>
+        </member>
+        <member name="M:Easy.WebApi.Controllers.V1.UsersController.Create(Easy.Application.Users.V1.Commands.CreateUserCommand)">
+            <summary>
+            Creates a new user
+            </summary>
+            <remarks>Awesomeness!</remarks>
+            <response code="204">User created</response>
+            <response code="400">User has missing/invalid values</response>
+            <response code="500">Oops! Can't create user right now</response>
+        </member>
+    </members>
+</doc>
